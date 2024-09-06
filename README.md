@@ -1,9 +1,10 @@
+
 <div align="center">
   <img src="ollama-nextjs-ui.gif">
 </div>
 
 <h1 align="center">
-  Fully-featured & beautiful web interface for Ollama LLMs
+  Voll ausgestattete & schöne Weboberfläche für Ollama LLMs
 </h1>
 
 <div align="center">
@@ -12,39 +13,38 @@
   
 </div>
 
+Starte mit großen Sprachmodellen **schnell**, **lokal** und sogar **offline**.
+Dieses Projekt zielt darauf ab, der einfachste Weg zu sein, um mit LLMs zu beginnen. Keine lästige und zeitaufwendige Einrichtung erforderlich!
 
-Get up and running with Large Language Models **quickly**, **locally** and even **offline**.
-This project aims to be the easiest way for you to get started with LLMs. No tedious and annoying setup required!
+# Funktionen ✨
 
-# Features ✨
+- **Schöne & intuitive Benutzeroberfläche:** Inspiriert von ChatGPT, um eine ähnliche Benutzererfahrung zu bieten.
+- **Vollständig lokal:** Speichert Chats in LocalStorage für Komfort. Keine Datenbank erforderlich.
+- **Vollständig responsive:** Nutze dein Handy, um mit der gleichen Leichtigkeit wie am Desktop zu chatten.
+- **Einfache Einrichtung:** Keine lästige und zeitaufwendige Einrichtung. Einfach das Repo klonen und loslegen!
+- **Code-Syntax-Hervorhebung:** Nachrichten mit Code werden für besseren Zugriff hervorgehoben.
+- **Einfaches Kopieren von Codeblöcken:** Hervorgehobenen Code mit einem Klick kopieren.
+- **Modelle herunterladen und löschen:** Modelle direkt über die Oberfläche herunterladen und löschen.
+- **Zwischen Modellen wechseln:** Schneller Wechsel zwischen Modellen mit einem Klick.
+- **Chatverlauf:** Chats werden gespeichert und sind leicht zugänglich.
+- **Heller & Dunkler Modus:** Wechsel zwischen hellem und dunklem Modus.
 
-- **Beautiful & intuitive UI:** Inspired by ChatGPT, to enhance similarity in the user experience.
-- **Fully local:** Stores chats in localstorage for convenience. No need to run a database.
-- **Fully responsive:** Use your phone to chat, with the same ease as on desktop.
-- **Easy setup:** No tedious and annoying setup required. Just clone the repo and you're good to go!
-- **Code syntax highligting:** Messages that include code, will be highlighted for easy access.
-- **Copy codeblocks easily:** Easily copy the highlighted code with one click.
-- **Download/Pull & Delete models:** Easily download and delete models directly from the interface.
-- **Switch between models:** Switch between models fast with a click.
-- **Chat history:** Chats are saved and easily accessed.
-- **Light & Dark mode:** Switch between light & dark mode.
-
-# Preview
+# Vorschau
 
 https://github.com/jakobhoeg/nextjs-ollama-llm-ui/assets/114422072/08eaed4f-9deb-4e1b-b87a-ba17d81b9a02
 
-# Requisites ⚙️
+# Voraussetzungen ⚙️
 
-To use the web interface, these requisites must be met:
+Um die Weboberfläche zu nutzen, müssen diese Voraussetzungen erfüllt sein:
 
-1. Download [Ollama](https://ollama.com/download) and have it running. Or run it in a Docker container. Check the [docs](https://github.com/ollama/ollama) for instructions.
-2. Node.js (18+) and npm is required. [Download](https://nodejs.org/en/download)
+1. Lade [Ollama](https://ollama.com/download) herunter und lasse es laufen. Alternativ kannst du es in einem Docker-Container betreiben. Sieh dir die [Dokumentation](https://github.com/ollama/ollama) für Anweisungen an.
+2. Node.js (18+) und npm sind erforderlich. [Herunterladen](https://nodejs.org/en/download)
 
-# Deploy your own to Vercel or Netlify in one click ✨
+# Eigene Bereitstellung auf Vercel oder Netlify mit einem Klick ✨
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjakobhoeg%2Fnextjs-ollama-llm-ui&env=NEXT_PUBLIC_OLLAMA_URL&envDescription=Your%20Ollama%20URL) [![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jakobhoeg/nextjs-ollama-llm-ui)
+[![Mit Vercel bereitstellen](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjakobhoeg%2Fnextjs-ollama-llm-ui&env=NEXT_PUBLIC_OLLAMA_URL&envDescription=Your%20Ollama%20URL) [![Mit Netlify bereitstellen](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jakobhoeg/nextjs-ollama-llm-ui)
 
-You'll need to set your [OLLAMA_ORIGINS](https://github.com/ollama/ollama/blob/main/docs/faq.md) environment variable on your machine that is running Ollama:
+Du musst deine [OLLAMA_ORIGINS](https://github.com/ollama/ollama/blob/main/docs/faq.md) Umgebungsvariable auf dem Gerät setzen, auf dem Ollama läuft:
 
 ```
 OLLAMA_ORIGINS="https://your-app.vercel.app/"
@@ -52,83 +52,84 @@ OLLAMA_ORIGINS="https://your-app.vercel.app/"
 
 # Installation 📖
 
-[![Packaging status](https://repology.org/badge/vertical-allrepos/nextjs-ollama-llm-ui.svg?columns=3)](https://repology.org/project/nextjs-ollama-llm-ui/versions)
+[![Paketstatus](https://repology.org/badge/vertical-allrepos/nextjs-ollama-llm-ui.svg?columns=3)](https://repology.org/project/nextjs-ollama-llm-ui/versions)
 
-Use a pre-build package from one of the supported package managers to run a local environment of the web interface.
-Alternatively you can install from source with the instructions below.
+Verwende ein vorgefertigtes Paket von einem der unterstützten Paketmanager, um eine lokale Umgebung der Weboberfläche zu betreiben.
+Alternativ kannst du von der Quelle installieren, indem du die untenstehenden Anweisungen befolgst.
 
-> [!NOTE]  
-> If your frontend runs on something other than `http://localhost` or `http://127.0.0.1`, you'll need to set the OLLAMA_ORIGINS to your frontend url.
+> [!HINWEIS]  
+> Wenn dein Frontend auf einer anderen Adresse als `http://localhost` oder `http://127.0.0.1` läuft, musst du die OLLAMA_ORIGINS auf die URL deines Frontends einstellen.
 >
-> This is also stated in the [documentation](https://github.com/ollama/ollama/blob/main/docs/faq.md#how-do-i-configure-ollama-server):
+> Dies ist auch in der [Dokumentation](https://github.com/ollama/ollama/blob/main/docs/faq.md#how-do-i-configure-ollama-server) beschrieben:
 > 
-> `Ollama allows cross-origin requests from 127.0.0.1 and 0.0.0.0 by default. Additional origins can be configured with OLLAMA_ORIGINS`
+> `Ollama erlaubt standardmäßig Cross-Origin-Anfragen von 127.0.0.1 und 0.0.0.0. Zusätzliche Ursprünge können mit OLLAMA_ORIGINS konfiguriert werden.`
 
-## Install from source
+## Installation von der Quelle
 
-**1. Clone the repository to a directory on your pc via command prompt:**
+**1. Klone das Repository in ein Verzeichnis auf deinem PC über die Kommandozeile:**
 
 ```
 git clone https://github.com/jakobhoeg/nextjs-ollama-llm-ui
 ```
 
-**2. Open the folder:**
+**2. Öffne den Ordner:**
 
 ```
 cd nextjs-ollama-llm-ui
 ```
 
-**3. Rename the `.example.env` to `.env`:**
+**3. Benenne die `.example.env` Datei in `.env` um:**
 
 ```
 mv .example.env .env
 ```
 
-**4. If your instance of Ollama is NOT running on the default ip-address and port, change the variable in the .env file to fit your usecase:**
+**4. Wenn deine Ollama-Instanz NICHT auf der Standard-IP-Adresse und dem Standard-Port läuft, ändere die Variable in der .env-Datei entsprechend:**
 
 ```
 NEXT_PUBLIC_OLLAMA_URL="http://localhost:11434"
 ```
 
-**5. Install dependencies:**
+**5. Installiere die Abhängigkeiten:**
 
 ```
 npm install
 ```
 
-**6. Start the development server:**
+**6. Starte den Entwicklungsserver:**
 
 ```
 npm run dev
 ```
 
-**5. Go to [localhost:3000](http://localhost:3000) and start chatting with your favourite model!**
+**7. Gehe zu [localhost:3000](http://localhost:3000) und beginne, mit deinem Lieblingsmodell zu chatten!**
 
-# Upcoming features
+# Zukünftige Funktionen
 
-This is a to-do list consisting of upcoming features.
-- ✅ Voice input support
-- ✅ Code syntax highlighting
-- ⬜️ Ability to send an image in the prompt to utilize vision language models.
-- ⬜️ Ability to regenerate responses
-- ⬜️ Import and export chats
+Dies ist eine To-Do-Liste der kommenden Funktionen.
+- ✅ Sprachunterstützung
+- ✅ Code-Syntax-Hervorhebung
+- ⬜️ Möglichkeit, ein Bild in den Prompt zu senden, um visuelle Sprachmodelle zu nutzen.
+- ⬜️ Möglichkeit, Antworten zu regenerieren.
+- ⬜️ Chats importieren und exportieren.
 
-# Tech stack
+# Tech-Stack
 
-[NextJS](https://nextjs.org/) - React Framework for the Web
+[NextJS](https://nextjs.org/) - React-Framework für das Web
 
-[TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework
+[TailwindCSS](https://tailwindcss.com/) - Utility-First CSS-Framework
 
-[shadcn-ui](https://ui.shadcn.com/) - UI component built using Radix UI and Tailwind CSS
+[shadcn-ui](https://ui.shadcn.com/) - UI-Komponenten, gebaut mit Radix UI und Tailwind CSS
 
-[shadcn-chat](https://github.com/jakobhoeg/shadcn-chat) - Chat components for NextJS/React projects
+[shadcn-chat](https://github.com/jakobhoeg/shadcn-chat) - Chat-Komponenten für NextJS/React-Projekte
 
-[Framer Motion](https://www.framer.com/motion/) - Motion/animation library for React
+[Framer Motion](https://www.framer.com/motion/) - Motion/Animationsbibliothek für React
 
-[Lucide Icons](https://lucide.dev/) - Icon library
+[Lucide Icons](https://lucide.dev/) - Icon-Bibliothek
 
-# Helpful links
+# Nützliche Links
 
-[Medium Article](https://medium.com/@bartek.lewicz/launch-your-own-chatgpt-clone-for-free-on-colab-shareable-and-online-in-less-than-10-minutes-da19e44be5eb) - How to launch your own ChatGPT clone for free on Google Colab. By Bartek Lewicz.
+[Medium Artikel](https://medium.com/@bartek.lewicz/launch-your-own-chatgpt-clone-for-free-on-colab-shareable-and-online-in-less-than-10-minutes-da19e44be5eb) - Wie du deinen eigenen ChatGPT-Klon kostenlos auf Google Colab startest. Von Bartek Lewicz.
 
-[Lobehub mention](https://lobehub.com/blog/5-ollama-web-ui-recommendation#5-next-js-ollama-llm-ui) - Five Excellent Free Ollama WebUI Client Recommendations
+[Lobehub-Erwähnung](https://lobehub.com/blog/5-ollama-web-ui-recommendation#5-next-js-ollama-llm-ui) - Fünf ausgezeichnete kostenlose Ollama WebUI-Client-Empfehlungen
+```
